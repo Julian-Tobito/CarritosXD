@@ -571,3 +571,41 @@ section a.CajaBtn {
     border: 4px solid #fff;
     transition: all .5s;
 }
+
+/* estilos reservas */
+
+.contenido .btn_reserva {
+    padding: 10px 20px;
+    border: 2px solid #ff0a00;
+    font-size: 14px;
+    background: transparent;
+    font-weight: 600;
+    cursor: pointer;
+    color: #ff0a00;
+    outline: none;
+    transition: all 300ms;
+}
+
+.contenido .btn_reserva {
+    background: #ff0a00;
+    color: #fff;
+}
+
+.titulo_estado_reserva {
+    padding: 10px 20px;
+    border: 2px solid #ff0a00;
+    font-size: 14px;
+    background: transparent;
+    font-weight: 600;
+    cursor: pointer;
+    color: #ff0a00;
+    outline: none;
+    transition: all 300ms;
+
+}
+
+.titulo_estado_reserva {
+    background: #ff0a00;
+    color: #fff;
+
+}
