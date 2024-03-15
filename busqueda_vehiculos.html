@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Búsqueda de vehículos</title>
+    <link rel="stylesheet" href="/assets/estilos.css">
+</head>
+
+<body>
+    <header class="header">
+        <h2><a href="#" class="Logo">DriveRent</a></h2>
+
+        <nav>
+
+
+            <a href="index.html">Inicio</a>
+            <a href="reserva_vehiculos.html">Reservas</a>
+            <a href="contacto.html">Contacto</a>
+
+        </nav>
+
+        <a href="registro_login.html" class="btn"><button>Login</button></a>
+
+    </header>
+    <main>
+        <section>
+
+            <h2>Barra de búsqueda</h2>
+            <form>
+                <!-- Campo de búsqueda -->
+                <input type="text" placeholder="Buscar...">
+                <!-- Botón de búsqueda -->
+                <input type="submit" value="Buscar">
+            </form>
+
+
+
+
+            <div id="resultado" class="resultado">
+                <div class="album">
+                    <label class="pb-2">Precio</label>
+                    <select name="precio" id="precio" class="from-control">
+                        <option value="Todos">Todos</option>
+                        <option value="ASC">De menor a mayor</option>
+                        <option value="DESC">De mayor a menor</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="album">
+                <labe class="pb-2">Marca</labe>
+                <select name="marca" id="marca" class="from-control">
+                    <option value="Todos">Todos</option>
+                    <option value="Marca1">Renault</option>
+                    <option value="Marca2">Chevrolet</option>
+                    <option value="Marca3">Mazda</option>
+                </select>
+            </div>
+
+            <input type="checkbox" name="Disponibilidad">Disponibilidad<br>
+            <input type="checkbox" name="No disponibilidad">No disponibilidad <br>
+
+
+
+            <section class="contenido">
+
+
+
+                <div id="mostrador" class="mostrador">
+                    <div class="fila">
+                        <div class="item" onclick="cargar(this)">
+                            <div class="contenedor-foto">
+                                <img src="imagenes/descarga.jpeg" alt="">
+                                <p class="descripcion">Twingo</p>
+                                <span class="precio">$500.000</span>
+                            </div>
+                        </div>
+
+                        <div class="item" onclick="cargar(this)">
+                            <div class="contenedor-foto">
+                                <img src="imagenes/Clio.jpg" alt="">
+                                <p class="descripcion">Clio</p>
+                                <span class="precio">$300.000</span>
+                            </div>
+                        </div>
+
+                        <div class="item" onclick="cargar(this)">
+                            <div class="contenedor-foto">
+                                <img src="imagenes/Koleos.jpeg" alt="">
+                                <p class="descripcion">Koleos</p>
+                                <span class="precio">$700.000</span>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="fila">
+                        <div class="item" onclick="cargar(this)">
+                            <div class="contenedor-foto">
+                                <img src="imagenes/Mazda3.jpeg" alt="">
+                                <p class="descripcion">Mazda 3</p>
+                                <span class="precio">$500.000</span>
+                            </div>
+                        </div>
+
+                        <div class="item" onclick="cargar(this)">
+                            <div class="contenedor-foto">
+                                <img src="imagenes/Mazda MX-30.jpeg" alt="">
+                                <p class="descripcion">Mazda MX-30</p>
+                                <span class="precio">$300.000</span>
+                            </div>
+                        </div>
+
+                        <div class="item" onclick="cargar(this)">
+                            <div class="contenedor-foto">
+                                <img src="imagenes/Mazda CX-30.jpeg" alt="">
+                                <p class="descripcion">Mazda CX-30</p>
+                                <span class="precio">$700.000</span>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Contenedor de item seleccionado -->
+                <div class="seleccion" id="seleccion">
+                    <div class="cerrar" onclick="cerrar()">
+                        &#x2715
+                    </div>
+                    <div class="info">
+                        <img src="imagenes/descarga.jpeg" alt="" id="img">
+                        <h2 id="modelo">Twingo</h2>
+                        <p id="descripcion">Descripción vehiculo 1</p>
+                        <span class="precio" id="precio1">$ 500.000</span>
+
+                        <div class="fila">
+                            <div class="size">
+                                <label for="">Color</label>
+                                <select name="" id="">
+                                    <option value="">Blanco</option>
+                                    <option value="">Negro</option>
+                                    <option value="">Rojo</option>
+                                    <option value="">Gris</option>
+                                </select>
+                            </div>
+
+                            <button>Reservar</button>
+                        </div>
+
+
+                    </div>
+                </div>
+
+            </section>
+        </section>
+    </main>
+
+    <hr>
+
+    <footer>
+        <p>Derechos de autor USTA TUNJA &copy; 2024 - Ejemplo.com</p>
+    </footer>
+    <script src="/assets/js/script.js"></script>
+</body>
+
+</html>
