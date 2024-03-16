@@ -4,6 +4,7 @@
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
     text-decoration: none;
+
 }
 
 .contenido {
@@ -608,4 +609,121 @@ section a.CajaBtn {
     background: #ff0a00;
     color: #fff;
 
+}
+
+/* Barra de busqueda */
+
+.contenedor-busqueda {
+    width: 95%;
+    margin: 0 auto;
+
+    position: relative;
+    justify-content: center;
+    text-align: center;
+}
+
+#barra-busqueda {
+    margin: 1em 0;
+}
+
+#barra-busqueda input {
+    outline: none;
+    border: none;
+    background-color: transparent;
+    width: 40%;
+    border-bottom: 2px solid #110f29;
+    padding: 1em 0.3;
+
+}
+
+#barra-busqueda input:focus {
+    border-bottom-color: #ff0a00;
+
+}
+
+#barra-busqueda button {
+    padding: 5px 10px;
+    margin-left: 5px;
+    border: 2px solid #000000;
+    border-radius: 10px;
+    font-size: 12px;
+    background: transparent;
+    font-weight: 600;
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+    outline: none;
+    transition: all 300ms;
+
+}
+
+
+#barra-busqueda button:hover {
+    background: #fff;
+    color: #ff0a00;
+}
+
+/* Slider */
+
+.slider h2 {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 2rem;
+}
+
+.slider-frame {
+    width: 800px;
+    height: auto;
+    margin: 50px auto 0;
+    overflow: hidden;
+}
+
+.slider-frame ul {
+    display: flex;
+    padding: 0;
+    width: 400%;
+
+    animation: slide 20s infinite alternate ease-in-out;
+}
+
+.slider-frame li {
+    width: 100%;
+    list-style: none;
+}
+
+.slider-frame img {
+    width: 100%;
+}
+
+@keyframes slide {
+    0% {
+        margin-left: 0;
+    }
+
+    20% {
+        margin-left: 0;
+    }
+
+    25% {
+        margin-left: -100%;
+    }
+
+    45% {
+        margin-left: -100%;
+    }
+
+    50% {
+        margin-left: -200%;
+    }
+
+    70% {
+        margin-left: -200%;
+    }
+
+    75% {
+        margin-left: -300%;
+    }
+
+    100% {
+        margin-left: -300%;
+    }
 }
