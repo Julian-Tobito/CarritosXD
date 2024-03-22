@@ -30,14 +30,14 @@
                 <div class="caja__trasera-register">
                     <h3>¿Aún no tienes una cuenta?</h3>
                     <p>Regístrate para que puedas iniciar sesión</p>
-                    <button id="btn__registrarse">Registrarse</button>
+                    <button id="btn__registrarse">Regístrarse</button>
                 </div>
             </div>
 
             <!--Formulario de Login y registro-->
             <div class="contenedor__login-register">
                 <!--Login-->
-                <form action="" class="formulario__login">
+                <form id="formulario__login" class="formulario__login">
                     <h2>Iniciar Sesión</h2>
                     <input type="text" placeholder="Correo Electronico">
                     <input type="password" placeholder="Contraseña">
@@ -45,16 +45,19 @@
                 </form>
 
                 <!--Register-->
-                <form action="" class="formulario__register">
+                <form id="formulario__register" class="formulario__register">
                     <h2>Regístrarse</h2>
-                    <input type="text" placeholder="Nombre completo">
-                    <input type="text" placeholder="Correo Electronico">
-                    <input type="text" placeholder="Usuario">
-                    <input type="password" placeholder="Contraseña">
+
+                    <input type="text" id="nombre" name="nombre" placeholder="Nombre completo" required>
+                    <input type="email" id="email" name="email" placeholder="Correo Electronico" required>
+                    <input type="text" id="usuario" name="usuario" placeholder="Usuario" required>
+                    <input type="password" id="contraseña" minlength="8" placeholder="Contraseña" required>
+
                     <button>Regístrarse</button>
                 </form>
             </div>
         </div>
+
 
     </main>
 
