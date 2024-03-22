@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/estilos.css">
+</head>
+
+<body>
+    <header class="header">
+        <h2><a href="#" class="Logo">DriveRent</a></h2>
+
+        <nav>
+
+            <a href="index.html">Inicio</a>
+            <a href="busqueda_vehiculos.html">Vehiculos</a>
+            <a href="reserva_vehiculos.html">Reservas</a>
+            <a href="contacto.html">Contacto</a>
+
+        </nav>
+
+        <a href="registro_login.html" class="btn"><button>Login</button></a>
+
+    </header>
+
+    <div class="contenedor__fecha_hora">
+        <form id="form_fecha_hora">
+
+            <!-- Sección de reserva -->
+            <section>
+                <br>
+                <h2>Reserva</h2>
+                <br>
+
+                <label for="fechaRecogida" id="fecha">Fecha y Hora de Recogida:</label><br>
+                <input type="datetime-local" id="fechaRecogida" name="fechaRecogida" required><br>
+                <label for="fechaDevolucion" id="fecha">Fecha y Hora de Devolución:</label><br>
+                <input type="datetime-local" id="fechaDevolucion" name="fechaDevolucion" required><br>
+            </section>
+            <!-- Fin de sección de reserva -->
+
+            <input type="submit" value="Enviar">
+
+        </form>
+
+    </div>
+
+    <div id="mensajeError" class="error-message"></div>
+
+    <!-- Script.js -->
+    <script src="/assets/js/script_fecha_hora.js"></script>
+
+</body>
+
+</html>
