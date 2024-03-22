@@ -7,6 +7,10 @@
     <title>Contacto</title>
     <!-- Estilos CSS y otras etiquetas meta si es necesario -->
     <link rel="stylesheet" href="assets/estilos.css">
+    <!-- Script.js -->
+    <script src="/assets/js/script_contacto.js"></script>
+
+
 </head>
 
 <body id="contacto_2">
@@ -30,23 +34,24 @@
     <main>
         <div class="contenedor__contacto">
 
-            <form action="https://formsubmit.co/your@email.com" method="POST" class="form__contacto">
+            <form id="form__contacto" class="form__contacto">
 
 
                 <label for="nombres" class="form-label">Nombres</label>
-                <input type="text" id="nombres" class="form-input" placeholder="Escribe tu nombre">
+                <input type="text" id="nombres" class="form-input" placeholder="Escribe tu nombre" required>
 
                 <label for="apellidos" class="form-label">Apellidos</label>
-                <input type="text" id="apellidos" class="form-input" placeholder="Escribe tus apellidos">
+                <input type="text" id="apellidos" class="form-input" placeholder="Escribe tus apellidos" required>
 
                 <label for="telefono" class="form-label">Telefono</label>
-                <input type="text" id="telefono" class="form-input" placeholder="Escribe tu telefono">
+                <input type="tel" id="telefono" class="form-input" placeholder="Escribe tu telefono" required>
 
                 <label for="email" class="form-label">Correo</label>
-                <input type="text" id="email" class="form-input" placeholder="Escribe tu correo">
+                <input type="email" id="email" class="form-input" placeholder="Escribe tu correo" required>
 
                 <label for="mensaje" class="form-label">Mensaje</label>
-                <textarea type="text" id="mensaje" class="form-textarea" placeholder="Escribe un mensaje"></textarea>
+                <textarea type="text" id="mensaje" class="form-textarea" placeholder="Escribe un mensaje"
+                    required></textarea>
 
                 <div class="from-txt">
 
@@ -71,6 +76,10 @@
         <!-- Pie de página -->
         <p>Derechos de autor USTA TUNJA &copy; 2024 - Ejemplo.com</p>
     </footer>
+
+
+
+
 </body>
 
 </html>
