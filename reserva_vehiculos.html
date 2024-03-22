@@ -26,28 +26,41 @@
 
     </header>
     <main>
+        <!-- Contenido principal -->
+        <!-- Agrega aquí el formulario de reserva de vehículos -->
+        <div class="contenedor__reserva">
 
-        <div class="contenedor_reserva">
-            <h1>Infromación de tu Vehículo</h1>
-            <form class="reserva_form">
-                <div class="form-group">
-                    <img src="imagenes/descarga.jpeg" alt="">
-                </div>
+            <form action="https://formsubmit.co/your@email.com" method="POST" class="form__reserva">
+
+                <label for="telefono" class="form-label">Telefono</label>
+                <input type="text" id="telefono" class="form-input" placeholder="Escribe tu telefono">
+
+                <label for="email" class="form-label">Correo</label>
+                <input type="text" id="email" class="form-input" placeholder="Escribe tu correo">
+
+                <label for="ubicacion" class="form-label">Ubicacion</label>
+                <input type="text" id="mensaje" class="form-input" placeholder="Escribe tu ubicacion"></input>
+
+                <label for="fecha" class="form-label">Fecha</label>
+                <input type="text" id="mensaje" class="form-input" placeholder="Escribe la fecha de la reserva"></input>
+
+                <label for="departamento" class="form-label">Departamento</label>
+                <input type="text" id="departaento" class="form-input" placeholder="Escribe tu departamento"></input>
+
+                <label for="municipio" class="form-label">Municipio</label>
+                <input type="text" id="municipio" class="form-input" placeholder="Escribe tu municipio"></input>
+
+
+                <label for="id" class="form-label">Tipo de documento</label>
+                <input type="text" id="id" class="form-input" placeholder="Escribe tu tipo"></input>
+
+
+                <input type="submit" class="btn_sumbit_reserva" value="Enviar reserva">
+
 
             </form>
+
         </div>
-
-        <div class="contenedor_informacion_reserva">
-            <main>
-                <h2 class="titulo_estado_reserva">Estado de reserva</h2>
-                <p>
-                    <script href="script_reserva.js"></script> datos del vehiculo
-                </p>
-            </main>
-        </div>
-
-
-
 
     </main>
     <footer>
