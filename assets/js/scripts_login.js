@@ -62,6 +62,47 @@ function register() {
         caja_trasera_login.style.opacity = "1";
     }
 }
+
+/* validaciones de logueo */
+
+document.getElementById("formulario__login").addEventListener("submit", function (event) {
+
+    // Obtener los valores de los campos del formulario
+
+    var correoLog = document.getElementById("email1").value;
+    var contraseñaLog = document.getElementById("contraseña1").value;
+
+    // Expresión regular para validar la contraseña
+    var contraseñaRegex = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&*()+,.?":{}|<>]).{8,}$/;
+
+
+    if (correoLog === "" || contraseñaLog === "") {
+        event.preventDefault();
+        document.getElementById("mensajeError").innerHTML = "Todos los campos son obligatorios.";
+
+    } else if (!contraseñaRegex.test(contraseñaLog)) { // Validar la contraseña con la expresión regular
+        event.preventDefault();
+        alert("La contraseña debe tener al menos 8 caracteres y contener al menos una letra mayúscula, una letra minúscula, un número y un carácter especial.");
+    }
+
+    // Limpiar campos después de enviar si todo es válido
+    if (correoLog !== "" && contraseñaLog !== "" && contraseñaRegex.test(contraseñaLog)) {
+        // Redirigir a otro HTML después de enviar exitosamente
+        alert("Inicio exitoso. Serás redirigido.");
+        abrirEnNuevaVentanaCerrarActual("index.html"); // Llama a la función abrirEnNuevaVentanaCerrarActual con el nombre del archivo HTML de destino
+    }
+
+    // Función para abrir una nueva ventana y cerrar la actual
+    function abrirEnNuevaVentanaCerrarActual(url) {
+        var nuevaVentana = window.open(url, '_blank');
+        nuevaVentana.focus();
+        window.close(); // Cierra la ventana actual
+    }
+
+
+});
+
+
 /* validaciones de registro */
 
 document.getElementById("formulario__register").addEventListener("submit", function (event) {
@@ -86,10 +127,19 @@ document.getElementById("formulario__register").addEventListener("submit", funct
     }
 
     // Limpiar campos después de enviar si todo es válido
-    if (nombre !== "" && email !== "" && contraseña !== "" && contraseñaRegex.test(contraseña)) {
+    if (nombre !== "" && correo !== "" && contraseña !== "" && contraseñaRegex.test(contraseña)) {
         // Redirigir a otro HTML después de enviar exitosamente
         alert("Registro exitoso. Serás redirigido.");
-        abrirEnNuevaVentanaCerrarActual("sitio2.html"); // Llama a la función abrirEnNuevaVentanaCerrarActual con el nombre del archivo HTML de destino
+        abrirEnNuevaVentanaCerrarActual("index.html"); // Llama a la función abrirEnNuevaVentanaCerrarActual con el nombre del archivo HTML de destino
+    }
+
+    // Función para abrir una nueva ventana y cerrar la actual
+    function abrirEnNuevaVentanaCerrarActual(url) {
+        var nuevaVentana = window.open(url, '_blank');
+        nuevaVentana.focus();
+        window.close(); // Cierra la ventana actual
     }
 
 });
+
+

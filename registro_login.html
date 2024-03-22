@@ -36,12 +36,15 @@
 
             <!--Formulario de Login y registro-->
             <div class="contenedor__login-register">
+
                 <!--Login-->
                 <form id="formulario__login" class="formulario__login">
                     <h2>Iniciar Sesión</h2>
-                    <input type="text" placeholder="Correo Electronico">
-                    <input type="password" placeholder="Contraseña">
+
+                    <input type="email" id="email1" name="email" placeholder="Correo Electronico" required>
+                    <input type="password" id="contraseña1" minlength="8" placeholder="Contraseña" required>
                     <button>Entrar</button>
+
                 </form>
 
                 <!--Register-->
