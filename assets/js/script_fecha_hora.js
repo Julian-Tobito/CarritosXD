@@ -23,4 +23,18 @@ document.getElementById("form_fecha_hora").addEventListener("submit", function (
         event.preventDefault();
         alert("La fecha de devolución debe ser posterior a la fecha de recogida.");
     }
+
+    if (fechaRecogidaDate >= fechaActual && fechaDevolucionDate >= fechaActual && fechaDevolucionDate > fechaRecogidaDate) {
+        // Redirigir a otro HTML después de enviar exitosamente
+        alert("El registro de la reserva fue exitoso.");
+        abrirEnNuevaVentanaCerrarActual("reserva_vehiculos.html"); // Llama a la función abrirEnNuevaVentanaCerrarActual con el nombre del archivo HTML de destino
+    }
+
 });
+
+// Función para abrir una nueva ventana y cerrar la actual
+function abrirEnNuevaVentanaCerrarActual(url) {
+    var nuevaVentana = window.open(url, '_blank');
+    nuevaVentana.focus();
+    window.close(); // Cierra la ventana actual
+}
