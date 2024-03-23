@@ -37,6 +37,7 @@ function cerrar() {
     seleccion.style.width = "0%";
     seleccion.style.opacity = "0";
     quitarBordes();
+
 }
 
 
@@ -53,6 +54,17 @@ document.getElementById('marca').addEventListener('change', function () {
         document.getElementById('Mazda').scrollIntoView({ behavior: 'smooth' });
     }
 });
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    document.getElementById("formulario__seleccionado").addEventListener("submit", function (event) {
+        event.preventDefault(); // Evita que el formulario se envíe automáticamente
+
+        // Redirige a otra página
+        window.location.href = "fecha_hora.html";
+    });
+});
+
 
 
 

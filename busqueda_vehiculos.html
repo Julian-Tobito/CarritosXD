@@ -18,7 +18,7 @@
 
             <a href="index.html">Inicio</a>
             <a href="busqueda_vehiculos.html">Vehiculos</a>
-            <a href="reserva_vehiculos.html">Reservas</a>
+            <a href="reserva_vehiculos.html">Historial de reservas</a>
             <a href="contacto.html">Contacto</a>
 
         </nav>
@@ -152,20 +152,25 @@
                         <h2 id="modelo">Twingo</h2>
                         <p id="descripcion">Descripción vehiculo 1</p>
                         <span class="precio" id="precio1">$ 500.000</span>
+                        <form id="formulario__seleccionado" action="fecha_hora.html">
+                            <div class="fila">
+                                <div class="size">
 
-                        <div class="fila">
-                            <div class="size">
-                                <label for="">Color</label>
-                                <select name="" id="">
-                                    <option value="">Blanco</option>
-                                    <option value="">Negro</option>
-                                    <option value="">Rojo</option>
-                                    <option value="">Gris</option>
-                                </select>
+                                    <label for="opciones">Selecciona una opción:</label><br>
+                                    <select id="opciones" name="opciones">
+                                        <option value="opcion1">Opción 1</option>
+                                        <option value="opcion2">Opción 2</option>
+                                        <option value="opcion3">Opción 3</option>
+                                    </select><br>
+
+                                    <label for="aceptoTerminos">Acepto los términos y condiciones</label>
+                                    <input type="checkbox" id="aceptoTerminos" name="aceptoTerminos" required>
+
+                                    <input type="submit" value="Enviar">
+                                </div>
+
                             </div>
-
-                            <a href="fecha_hora.html"><button>Reservar</button></a>
-                        </div>
+                        </form>
 
 
                     </div>
