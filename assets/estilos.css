@@ -150,6 +150,12 @@
     background-color: #f85151;
 }
 
+#contenedorReserva {
+
+    width: 100%;
+    padding-left: 75px;
+}
+
 /* Login/Register */
 
 body#login {
@@ -351,7 +357,8 @@ body#contacto_2 {
 } */
 
 .contenedor__contacto .form__contacto {
-    background: #ccc;
+    background: transparent;
+    border: 1px solid #ccc;
     width: 100%;
     max-width: 700px;
     margin: auto;
@@ -359,10 +366,11 @@ body#contacto_2 {
     margin-top: 35px;
     padding-bottom: 30px;
     border-radius: 3px;
+
 }
 
 .contenedor__contacto .form__contacto div {
-    background: #ccc;
+
     width: 100%;
     max-width: 700px;
     margin: auto;
@@ -417,7 +425,7 @@ body#contacto_2 {
 }
 
 .contenedor__contacto .form__contacto .btn_sumbit_contacto {
-
+    width: 100%;
     padding: 10px 40px;
     border: 2px solid #ff0a00;
     font-size: 14px;
